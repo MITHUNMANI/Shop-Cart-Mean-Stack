@@ -1,0 +1,87 @@
+<!-- banner -->
+<div class="banner">
+    <div class="w3l_banner_nav_right"  *ngFor="let one of origin">
+      <mat-spinner *ngIf="loading"></mat-spinner>
+        <div class="agileinfo_single">
+            <h5>{{one.productName}}</h5>
+            <div class="col-md-4 agileinfo_single_left">
+                <img id="example" src="assets/product_image/{{one.productImgPath}}" alt=" " class="img-responsive" />
+            </div>
+            <div class="col-md-8 agileinfo_single_right">
+                <div class="rating1">
+                    <span class="starRating">
+                        <input id="rating5" type="radio" name="rating" value="5">
+                        <label for="rating5">5</label>
+                        <input id="rating4" type="radio" name="rating" value="4">
+                        <label for="rating4">4</label>
+                        <input id="rating3" type="radio" name="rating" value="3" checked>
+                        <label for="rating3">3</label>
+                        <input id="rating2" type="radio" name="rating" value="2">
+                        <label for="rating2">2</label>
+                        <input id="rating1" type="radio" name="rating" value="1">
+                        <label for="rating1">1</label>
+                    </span>
+                </div>
+                <div class="w3agile_description">
+                    <h4>Description :</h4>
+                    <p></p>
+                </div>
+                <div class="snipcart-item block">
+                    <div class="snipcart-thumb agileinfo_single_right_snipcart">
+                        <h4>{{one.productPrice | currency:"INR"}}</h4>
+                    </div>
+                    <div class="snipcart-details agileinfo_single_right_details">
+                        <input type="button" (click)="addToCart(one._id, one.productPrice)" name="submit" value="Add to cart" class="button" />
+
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<!-- //banner -->
+<!-- brands -->
+<div class="w3ls_w3l_banner_nav_right_grid w3ls_w3l_banner_nav_right_grid_popular">
+    <div class="container">
+        <h3>Related Items</h3>
+            <div class="w3ls_w3l_banner_nav_right_grid1">
+                <h6>food</h6>
+                <mat-spinner *ngIf="loading"></mat-spinner>
+                <ng-container *ngIf=!loading>
+                  <div class="col-md-3 w3ls_w3l_banner_left" *ngFor="let pdts of relate;">
+                    <div class="hover14 column">
+                    <div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+                      <div class="agile_top_brand_left_grid_pos">
+                        <img src="assets/images/offer.png" alt=" " class="img-responsive" />
+                      </div>
+                      <div class="agile_top_brand_left_grid1">
+                        <figure>
+                          <div class="snipcart-item block">
+                            <div class="snipcart-thumb">
+                              <div class="show" *ngIf="hide">
+                              <!-- <a routerLink="/view/{{pdt._id}}"> </a>-->
+                              <img src="assets/product_image/{{pdts.productImgPath}}" alt=" " (click)="viewpdt(pdts.productcatId,pdts._id)" class="img-responsive" />
+                              <p>{{pdts.productName}}</p>
+                              <h4>{{pdts.productPrice | currency:"INR"}}</h4>
+                            </div>
+                          </div> 
+                            <div class="snipcart-details">
+                              
+                                  <input type="button" (click)="addToCart(pdts._id, pdts.productPrice)" name="submit" value="Add to cart" class="button" />
+                               
+                            </div>
+                          </div>
+                        </figure>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+            </ng-container>
+             
+                <div class="clearfix"> </div>
+            </div>
+         
+    </div>
+</div>

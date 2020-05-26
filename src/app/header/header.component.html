@@ -1,0 +1,66 @@
+<div class="agileits_header">
+  <div class="w3l_offers">
+    <a routerLink="/offers">Today's special Offers !</a>
+  </div>
+  <div class="w3l_search">
+    <form>
+      <input type="text" name="Product" value="Search a product..." onfocus="this.value = '';"
+        onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
+      <input type="submit" value=" ">
+    </form>
+  </div>
+  <div class="product_list_header">
+    <a routerLink='/auth/mycart'>
+      <input type='button' type='button' name='submit' value="Cart Items {{cartitems}}" class='button'>
+    </a>
+  </div>
+  <div class="w3l_header_right">
+    <ul>
+      <li class="dropdown profile_details_drop">
+        <a routerLink="" class="dropdown-toggle" data-toggle="dropdown">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <span class="caret"> 
+          </span>
+        </a>
+        <div class="mega-dropdown-menu">
+          <div class="w3ls_vegetables">
+            <ul class="dropdown-menu drp-mnu" *ngIf='loginUser.isLoggedIn()'>
+              <li><a routerLink="/auth/addproducts">Add Products</a></li>
+              <li><a (click)='dologout()'>Logout</a></li>
+            </ul>
+            <ul class="dropdown-menu drp-mnu" *ngIf='!loginUser.isLoggedIn()'>
+              <li><a routerLink="/login">Login</a></li>
+              <li><a routerLink="/login">Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="w3l_header_right1">
+    <h2><a routerLink="/mail">Contact Us</a></h2>
+  </div>
+  <div class="clearfix"> </div>
+</div>
+<div class="logo_products">
+  <div class="container">
+    <div class="w3ls_logo_products_left">
+      <h1><a routerLink="/about"><span>Grocery</span>Store</a></h1>
+    </div>
+
+    <div class="w3ls_logo_products_left1">
+        <p>We serve the best groceries in and around the city !</p>
+    </div>
+    <div class="clearfix"> </div>
+  </div>
+</div>
+<!-- //header -->
+<!-- products-breadcrumb -->
+ <div class="products-breadcrumb">
+  <div class="container">
+    <ul>
+      <li><i class="fa fa-home" aria-hidden="true"></i><a routerLink="/">Home</a><span>|</span></li>
+      <li><a routerLink="/about">About Us</a></li>
+    </ul>
+  </div>
+</div> 

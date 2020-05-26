@@ -1,0 +1,58 @@
+ 
+<div class="w3l_banner_nav_right">
+        
+  <div class="w3ls_w3l_banner_nav_right_grid">
+    <div class="w3ls_w3l_banner_nav_right_grid1">
+      <h6>food</h6>
+      <mat-spinner *ngIf="loading"></mat-spinner>
+      <!-- only one button (click)="showelSe()" -->
+      <button class="btn" (click)="hide=!hide">
+        <span *ngIf=hide>Hide</span>
+        <span *ngIf=!hide>Show</span>
+        </button>
+
+        <!-- loading gif befor fetching the data from db -->
+                <!-- loading gif befor fetching the data from db -->
+<!-- rendering the data afer loading gif using ng container -->
+<ng-container *ngIf=!loading>
+      <div class="col-md-3 w3ls_w3l_banner_left" *ngFor="let pdt of products;">
+        <div class="hover14 column">
+        <div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+          <div class="agile_top_brand_left_grid_pos">
+            <img src="assets/images/offer.png" alt=" " class="img-responsive" />
+          </div>
+          <div class="agile_top_brand_left_grid1">
+            <figure>
+              <div class="snipcart-item block">
+                <div class="snipcart-thumb">
+                  <div class="show" *ngIf="hide">
+                  <!-- <a routerLink="/view/{{pdt._id}}"></a> -->
+                  <img src="assets/product_image/{{pdt.productImgPath}}" alt=" " (click)="viewpdt(pdt.productcatId,pdt._id)" class="img-responsive" />
+                  <p>{{pdt.productName}}</p>
+                  <h4>{{pdt.productPrice | currency:"INR"}}</h4>
+                </div>
+              </div> 
+                <div class="snipcart-details">
+                  
+                      <input type="button" (click)="addToCart(pdt._id, pdt.productPrice)" name="submit" value="Add to cart" class="button" />
+                   
+                </div>
+              </div>
+            </figure>
+          </div>
+        </div>
+        </div>
+      </div>
+</ng-container>
+<!-- rendering the data afer loading gif using ng container -->
+
+     
+
+      
+      <div class="clearfix"> </div>
+    </div>
+    
+   
+  </div>
+</div>
+<div class="clearfix"></div>

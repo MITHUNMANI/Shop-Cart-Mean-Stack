@@ -1,0 +1,249 @@
+/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.w3l_header_right1 h2 {
+    letter-spacing: normal;
+     margin: 0!important; 
+}
+.products-breadcrumb {
+    padding: 1em 0;
+    background: linear-gradient(180deg,rgba(224,153,0,0) 0%,#e09900 100%), url(/assets/images/food11.jpg) center;
+}
+.form-control{
+    height: 42px;
+}
+.product_list_header input.button {
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    text-transform: capitalize;
+    padding: .5em 2.5em .5em 1em;
+    border: 1px solid transparent;
+    margin: .35em 0 0;
+    background: url(/assets/images/cart.png) no-repeat 116px 9px;
+}
+* {
+    font-family: serif;
+    box-sizing: border-box;
+    font-style: normal;
+}
+
+.agileits_header {
+    background: #dc2430;
+}
+
+.w3ls_logo_products_left h1 a span {
+    font-size: 32px;
+    background-image: linear-gradient(to right, #ffbc03, #f56d00 20%, #f56d00 80%);
+    background-image: -webkit-linear-gradient(to right, #ffbc03, #f56d00 20%, #f56d00 80%);
+    background-image: -o-linear-gradient(to right, #ffbc03, #f56d00 20%, #f56d00 80%);
+    background-image: -moz-linear-gradient(to right, #ffbc03, #f56d00 20%, #f56d00 80%);
+    color: transparent;
+    -webkit-background-clip: text;
+    display: block;
+}
+
+.newsletter {
+    padding: 3em 0;
+    background: none;
+    color: #dc2430;
+}
+.w3agile_newsletter_right input[type="submit"]:hover{
+    outline: none;
+    padding: 10px 0;
+    background: #dc2430;
+    border: 1px solid #fff;
+    font-size: 14px;
+    color: #fff;
+    width: 25.7%;
+    text-transform: uppercase;
+
+}
+.w3agile_newsletter_left h3 {
+    text-transform: capitalize;
+    font-size: 1.2em;
+    color: crimson;
+    margin: .5em 0 0;
+}
+
+.w3ls_w3l_banner_nav_right_grid1 h6 {
+    text-transform: uppercase;
+    color: transparent;
+    background-image: linear-gradient(to right, #ffbc03, #f56d00 20%, #f56d00 80%);
+    background-image: -webkit-linear-gradient(to right, #ffbc03, #f56d00 20%, #f56d00 80%);
+    background-image: -o-linear-gradient(to right, #ffbc03, #f56d00 20%, #f56d00 80%);
+    background-image: -moz-linear-gradient(to right, #ffbc03, #f56d00 20%, #f56d00 80%);
+    font-size: 1.5em;
+    -webkit-background-clip: text;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.snipcart-details input.button {
+    font-size: 14px;
+    color: #fff;
+    background: #3aa3cc;
+    text-decoration: none;
+    position: relative;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    text-transform: uppercase;
+    padding: .5em 0;
+    outline: none;
+}
+
+.w3agile_newsletter_right input[type="email"] {
+    outline: none;
+    padding: 10px;
+    background: none;
+    border: 1px solid crimson;
+    font-size: 14px;
+    color: crimson;
+    width: 74%;
+    float: left;
+}
+
+.agile_top_brand_left_grid1 p {
+    color: #dc2430;
+    margin: 1.5em 0 1em;
+    line-height: 1.5em;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.w3ls_logo_products_left1 ul.special_items li a {
+    color: #dd2476;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+}
+
+.w3l_offers a {
+    font-size: 1.2em;
+    color: crimson;
+    text-decoration: none;
+    padding: .5em 3em;
+    background: white;
+    display: block;
+    height:47px;
+}
+
+.wthree_footer_copy p {
+    font-size: 15px;
+    color: #fff;
+    font-style: italic;
+    line-height: 1.8em;
+    font-variant: petite-caps;
+    font-weight: 700;
+}
+.footer {
+    padding: 4em 0;
+    background: linear-gradient(180deg,rgba(224,153,0,0) 0%,#e09900 100%), url(/assets/images/food11.jpg) center;
+   
+    
+}
+.w3_footer_grid ul.w3_footer_grid_list1 li span {
+    margin-left: 2em;
+    display: block;
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+}
+.w3_footer_grid ul.w3_footer_grid_list1 li i {
+    color: crimson;
+    font-family: fantasy;
+    font: caption;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.w3l_search input[type="submit"] {
+    outline: none;
+    padding: 10px 0 9px;
+    width: 15%;
+    border: none;
+    position: relative;
+    background: url(/assets/images/img-sp.png) no-repeat 14px 5px;
+}
+.w3l_header_right1 h2 a {
+    font-size: .74em;
+    color: #fff;
+    padding: .5em 1.5em;
+    background: #dc2430;
+    display: block;
+    text-decoration: none;
+}
+
+.navbar-nav>li>a {
+    color: #004e92;
+    background: #fff;
+    padding: 10px 0px 10px 40px;
+    border: none;
+}
+
+.w3ls_logo_products_left1 ul.phone_email li {
+    display: inline-block;
+    font-family: fantasy;
+    margin-right: 2em;
+    color: #185a9d;
+}
+
+.w3ls_logo_products_left1 ul.phone_email li a {
+    color: #dd2476;
+    font-family: fantasy;
+}
+
+.navbar-nav {
+    float: none;
+    margin: 0;
+    border-top: none;
+}
+
+.agile_top_brand_left_grid1 h4, .agileinfo_single_right_snipcart h4 {
+    font-weight: 700;
+    font-size: 1em;
+    color: #185a9d;
+}
+
+
+
+.w3l_offers a:hover {
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
+    padding: .5em 3em;
+    background: #dc2430!important;
+    display: block;
+}
+
+.w3l_offers:hover {
+    float: left;
+    background: #dd2476!important;
+}
+/* media query - responsiveness */
+
+@media (max-width: 991px) {
+    .w3ls_logo_products_left h1 a {
+        font-size: 1.2em;
+        background: url(/assets/images/img-sp.png) no-repeat 43px -9px;
+        height: 95px;
+        margin-top: 38px;
+    }
+    .w3l_search input[type="submit"] {
+        outline: none;
+        padding: 10px 0 9px;
+        width: 15%;
+        border: 1px solid #b06ab3;
+        position: relative;
+        background: url(/assets/images/img-sp.png) no-repeat -2px 5px #b06ab3;
+    }
+    .logo_products {
+        padding: 10em 0 1em;
+    }
+}
+
+@media (max-width: 640px) {
+    .logo_products {
+        padding: 2em 0 1em;
+    }
+}
